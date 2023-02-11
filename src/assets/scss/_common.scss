@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background: var(--bg-black);
+}
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --bg-black: #eff2f1;
+  --color-title: #2f2f2f;
+  --color-text: #6a6a6a;
+  --color-border: rgba(255, 255, 255, 0.29);
+  --color-form: #c4c4c4;
+  --color-btn: #F9BF29;
+  --bg-header:rgb(59 93 80);
+}

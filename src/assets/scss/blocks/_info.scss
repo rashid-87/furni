@@ -1,0 +1,100 @@
+.info {
+  margin-bottom: 100px;
+  &__wrapper {
+    display: flex;
+    column-gap: 123px;
+  }
+  &__images {
+    position: relative;
+  }
+  &__images::before {
+    position: absolute;
+    content: url(./../images/info-beffori.svg);
+    top: -60px;
+    left: -80px;
+    z-index: -1;
+  }
+  &__choose {
+    margin-bottom: 88px;
+  }
+  &__title {
+    margin-bottom: 27px;
+    font-size: 34px;
+    color: var(--color-title);
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-text);
+  }
+  &__wrapp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 42px;
+    row-gap: 24px;
+    position: relative;
+  }
+  &__wrapp::before {
+    position: absolute;
+    content: url(./../images/info-aftor.svg);
+    top: -80px;
+    right: -110px;
+  }
+  &__suptitle {
+    margin: 20px 0 10px 0;
+    font-size: 14px;
+    color: var(--color-title);
+  }
+  &__dest {
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--color-text);
+  }
+}
+@media (max-width: 1010px) {
+  .info {
+    margin-bottom: 80px;
+    &__wrapper {
+      column-gap: 80px;
+    }
+  }
+}
+@media (max-width: 950px) {
+  .info {
+    margin-bottom: 50px;
+    &__wrapper {
+      column-gap: 40px;
+    }
+    &__choose {
+      margin-bottom: 50px;
+    }
+  }
+}
+@media (max-width: 950px) {
+  .info {
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    &__choose {
+      margin: 0;
+      margin-bottom: 30px;
+    }
+    &__title {
+      margin: 0;
+      margin: 20px 0 10px 0;
+    }
+    &__wrapp::before {
+      display: none;
+    }
+    &__images {
+      margin-top: 25px;
+    }
+    &__images::before {
+      display: none;
+    }
+    &__img {
+      width: 100%;
+    }
+  }
+}
